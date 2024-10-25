@@ -1,0 +1,273 @@
+/* Basic styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #ff891a;
+    box-sizing: border-box;
+}
+h2{
+    color: #161D6F;
+}
+
+/* Navbar styles */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #161D6F;
+    top: 0;
+    z-index: 1000;
+    /* padding-left: 10px; */
+    
+}
+.navbar{
+    /* margin-left: 10px; */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+/* .imgfor42{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+} */
+nav ul li {
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #98DED9;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+/* Section */
+.section {
+    padding: 30px 20px;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #C7FFD8;
+}
+
+
+.Name{
+    padding-bottom: 20px;
+}
+.portfolio-button img{
+    margin-bottom: -5px;
+}
+#home {
+    color: rgb(90, 84, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    margin-top: -90px;
+}
+
+.intro {
+    background-color:#98DED9;
+    padding: 40px;
+    border-radius: 10px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    box-shadow: 5px 10px 10px 20px rgb(96, 178, 229);
+    h2{
+        color: white;
+    }
+
+}
+
+.intro:hover{
+    transform: scale(1.2);
+    background-color: #66e3da;
+    box-shadow: 20px 20px 20px 20px rgba(255, 255, 255, 0.3);
+    
+    p,h2{
+        color: rgb(255, 0, 0);
+    }
+    .rainbow{
+        font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    color: #ff7403;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.portfolio-buttons {
+    margin-top: 20px;
+}
+
+.portfolio-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #008cba;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s, background-color 0.3s;
+}
+
+.portfolio-button:hover {
+    transform: scale(1.1px);
+    background-color: #06a4c4;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+/* team member */
+#team {
+    background-color: #66e3da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        margin-bottom: 0px;
+    }
+}
+.detail1{
+    padding-bottom: 60px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 300px;
+    margin-left: 200px;
+    margin-right: 200px;
+    transition: transform 0.5s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 8px 30px rgba(0, 0, 0, 0.3);
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.team-member img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* other section */
+#skills {
+    background-color: #C7FFD8;
+    h2{
+        padding-top: 15px;
+    }
+}
+
+#contact {
+    background-color: #eee;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+
+    }
+    #team{
+        flex-direction: column;
+    }
+}
+/* contact */
+#contact{
+    background-color: #66e3da;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.pic2{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin-left: 110px ;
+    margin-right: 110px;
+    border: 5px solid #0B2F9F;
+    margin-bottom: 20px;
+}
+.github{
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 0px;
+}
+h5{
+    display: flex;
+}
+.cosmic{
+    display: flex;
+    align-items: center;
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        margin: 20px;
+    }
+    p{
+        padding-left: 10px;
+    }
+}
+
+.social{
+}
